@@ -1,16 +1,2 @@
-import * as cdk from 'aws-cdk-lib/core';
-import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
-
-export class CdkWebArchitectureStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
-    super(scope, id, props);
-
-    // The code that defines your stack goes here
-
-    // example resource
-    // const queue = new sqs.Queue(this, 'CdkWebArchitectureQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
-  }
-}
+export { NetworkStack } from './network-stack';
+export { ServerStack } from './server-stack';
